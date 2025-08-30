@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vikas250697.github.io/vikas250697/sitemap.xml
