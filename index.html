@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" >
+  <title>Vikas Kumar | Portfolio</title>
+  <style>
+    
+
+
+	body {margin:0; padding:0; line-height:1.6; background:#f4f4f4; color:#333; font-family: Arial, sans-serif; justify-content: center;
+  align-items: center;}
+
+       .container{
+  		max-width: 900px;
+  		margin: 8px auto ;          /* center content */
+  		background-color: #ffffff; /* white or off-white */
+  		padding: 20px 40px;
+  		border-radius: 10px;
+  		box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+ 		min-height: calc(75vh - 30px);    /* 100% viewport height minus 20px top & 20px bottom */
+  		box-sizing: border-box;
+ 		display: in-flex;
+  		flex-direction: column;   
+		font-size: 15px;         
+	       }
+
+	.container a {color:#333;  text-decoration:none; font-family: Arial, sans-serif;}
+
+	 .container a:hover {   color: #555; }
+
+
+    
+
+ 	header{
+    		
+    		color: #333;            /* Change text color to black for contrast */
+    		padding: 1rem;
+    		text-align: justify;    
+	      }
+
+
+
+
+
+	header h1 {margin:0; font-size:2rem; font-family: Segoe Script, sans-serif;justify-content: left;color: #24375A;}
+
+
+       .nav-container{
+    		max-width: 900px;  /* Same as sections */
+    		margin: 10px auto;    /* Center it */
+		}
+
+
+	nav {
+		
+   	 	background-color: #24375A;
+    		border-radius: 5px 5px 5px 5px;
+    		padding: 10px 20px;
+    		display: flex;          /* Normal flex */
+    		justify-content: left; /* Center the links inside */
+    		gap: 25px;
+    		font-family: Arial, sans-serif;
+    		color: #F9F5EC;
+	    }
+
+	 nav a {color:#F9F5EC; margin:0 20px; text-decoration:none; font-weight:bold;font-family: Arial, sans-serif;}
+
+	 nav a:hover {   color: #D3D3D3; }
+
+	 nav a.active {
+  		color: #D3D3D3;       /* gold text */
+  		border-bottom: 2px solid  #D3D3D3; /* underline highlight */
+		}
+
+
+
+	.profile-img-container {
+  		max-width: 800px;
+  		margin: 20px auto auto 15px; /* Space below nav, centered horizontally */
+  		display: flex;
+  		align-items: flex-start;
+		transition: transform 0.4s ease, border-radius 0.4s ease;
+  
+		}
+
+	/* Profile photo style */
+	.profile-img-container img {
+ 		 width: 250px;
+ 		 height: 250px;
+ 		 border-radius: 50%;
+ 		 object-fit: cover;
+ 		 display: block;
+		}
+
+
+
+
+
+
+
+	.profile-row {
+  		display: flex;
+  		gap: 30px;                /* Space between photo and bio */
+  		align-items: flex-start;  /* Align top edges */
+  		max-width: 900px;
+ 	 	margin: 2px auto 0 auto; /* Same centering as nav bar */
+		}
+
+
+
+
+	.footer-container {
+   		max-width: 900px;  /* Same as sections */
+    		margin: 0 auto;    /* Center it */
+		}
+
+
+	footer {
+  		background-color: #24375A;
+  		color: #F9F5EC;
+  		text-align: center;
+  		height: 15px;               /* fixed small depth */
+  		line-height: 0px;
+  		font-size: 14px;
+  		border-radius: 5px 5px 5px 5px;
+		padding:15px 15px 20px 15px;
+		margin-top:35px;
+		margin-bottom: 20px;
+		}
+
+
+
+	.contact-box {
+ 	        background-color: #FAFAFA;
+  		color: #24375A;
+		width: 240px;   /* match photo width */
+  		margin: auto auto auto 15px; /* Space below nav, centered horizontally */
+  		padding: 10px;
+  		border-radius: 5px;
+  		text-align: left;
+  		font-size: 14px;
+		font-family: Arial, sans-serif;
+		
+		}
+
+	.contact-box a { color: #24375A;  text-decoration: none;}
+	.contact-box a:hover{ color: #555;  text-decoration: none;}
+	
+
+	.orcid-link {
+  		display: inline-flex;
+  		align-items: center;
+  		font-family: Arial, sans-serif;
+  		font-size: 16px;
+ 	 	text-decoration: none;
+  		color: #A6CE39;
+
+               }
+
+
+	.orcid-icon {
+  		display: inline-flex;
+  		align-items: center;
+  		justify-content: center;
+  		background-color: #A6CE39;
+  		color: white;
+  		font-size: 15px;
+  		font-weight: bold;
+  		border-radius: 50%;
+  		width: 25px;
+  		height: 25px;
+  		margin-right: auto;
+		margin-bottom: 5px;
+		}
+
+	.orcid-text {color: #24375A; font-size:14px;text-decoration:underline;}
+
+	
+
+	section {padding:40px 20px; max-width:900px; margin:auto;}
+
+   	h2 {color:#24375A; border-bottom:2px solid #DEDEDE; font-family: Arial;}
+
+	ul {list-style-type:none; padding:0;}
+    
+	ul li {margin-bottom:10px;}
+
+
+
+	/* Publications Section */
+#home {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+#home h2 {
+  color: #24375A;
+  border-bottom: 2px solid #DEDEDE;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#home h3 {
+  color: #24375A;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-left: 4px solid #24375A;
+  padding-left: 10px;
+}
+
+#home ol {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+#home li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+#home a {
+  font-size: 14px;
+  color: #24375A;
+  text-decoration: underline;
+}
+
+#home a:hover {
+  color: #555;
+}
+
+
+.cv-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  
+  padding-bottom: 5px;
+}
+
+.cv-list li .year {
+  color: #24375A;
+  font-weight: bold;
+  min-width: 70px;   /* keeps alignment neat */
+  text-align: right;
+  margin-left: 20px;
+}
+
+
+
+   
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+		<header>
+
+ 			<div style="display: in-flex; align-items: top; justify-content: space-between; max-width: 900px; margin: auto;">
+    				
+				<h1>Vikas Kumar</h1>
+    
+  			</div>
+
+  			<div class="nav-container">
+    				
+				<nav>
+      					<a href="index.html" class="active">Home</a>
+      					<a href="education.html">Education</a>
+      					<a href="publications.html">Publications</a>
+          				<a href="awards.html">Awards</a>
+					<a href="teaching.html">Teaching</a>
+      					<a href="activities.html">Activities</a>
+					
+    				</nav>
+
+    				</nav>
+  			
+			</div>
+		
+		</header>
+
+
+	<div class = "container">
+		
+
+		<div class="profile-row">
+  			
+			<div class="profile-img-container">
+    				
+				<img src="Profile photo_vikas.jpg" alt="Vikas Kumar">
+  		
+
+			</div>
+  
+			<section id="bio">
+    
+	
+    						<p> I completed my Ph.D. from the <a href="https://ma.iitr.ac.in/" target="_blank">Department of Mathematics</a>, <a href="https://www.iitr.ac.in/" target="_blank">Indian Institute of Technology Roorkee</a>, under the supervision of <a href="https://www.iitr.ac.in/~MA/Gangopadhyay_Aditi" target="_blank">Prof. Aditi Gangopadhyay</a>. My doctoral research focused on the cryptanalysis and design of lattice-based post-quantum cryptosystems, with a particular emphasis on NTRU-like constructions. </p> <p> Currently, I am working as a Postdoctoral Research Fellow in the <a href="https://ai-security.github.io/index_e.htm" target="_blank">Information and Machine Learning Lab</a>, <a href="https://www.gachon.ac.kr/eng/7458/subview.do" target="_blank">Department of Computer Engineering</a>, <a href="https://www.gachon.ac.kr/" target="_blank">Gachon University</a>, South Korea, since August 2025, hosted by <a href="https://ai-security.github.io/professor_main_e.htm" target="_blank">Prof. Seong Oun Hwang</a>. Prior to this, I worked as a Project Associate in the Quantum Safe Design and Analysis Lab (QSDAL), <a href="https://iitr.ac.in/Departments/Computer%20Science%20and%20Engineering%20Department/index.html" target="_blank">Department of Computer Science and Engineering</a>, IIT Roorkee, under the supervision of <a href="https://iitr.ac.in/Departments/Computer%20Science%20and%20Engineering%20Department/People/Faculty/100403.html" target="_blank">Prof. Sugata Gangopadhyay</a>. </p>
+  				
+			</section>
+
+
+ 		</div>
+
+		<div class="contact-box">
+
+			<p><strong>Office address</Strong><br>
+
+    				Room No. 523<br>
+    				Information Security and Machine Learning Lab<br>
+    				Department of Computer Engineering<br>
+    				Gachon University, South Korea
+
+			<p><strong>E-mails</Strong><br>
+
+
+			<p>
+				<!-- Email -->
+  				<i class="fa-solid fa-envelope" style="font-size:20px; margin-right:10px; align-items: center;"></i>
+				<a href="mailto:vikaskumar250697@gmail.com" target="_blank" >vikaskumar250697@gmail.com</a>
+				<a href="mailto:v_kumar@ma.iitr.ac.in" target="_blank" style = "margin-left:34px;">v_kumar@ma.iitr.ac.in</a>
+
+
+				</a>
+			</p>
+			<p>
+			<a href="VIKAS_CV.pdf"><strong>Curriculum Vitae</strong> (PDF)</a></p>
+			
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+			<p><strong>Other links</Strong><br>
+	
+			<div style="display:flex; gap:20px; align-items:center;margin:15px 0">
+
+
+			<!-- Orcid -->
+
+			<a href="https://orcid.org/0000-0002-1981-1984" target="_blank" rel="noopener noreferrer" class="orcid-link">
+  				<span class="orcid-icon">iD</span>
+  				
+			</a>
+
+  			<!-- LinkedIn -->
+
+
+  				
+				<a href="https://www.linkedin.com/in/vikas-kumar-a5755a26b" target="_blank">
+    				<img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="22">
+ 			        </a>
+
+  			<!-- GitHub -->
+  					
+				<a href="https://github.com/vikas250697" target="_blank">
+    				<i class="fa-brands fa-github" style="font-size:22px;"></i>
+  				</a>
+
+  			<!-- Google Scholar -->
+  				<a href="https://scholar.google.com/citations?user=1EusFdIAAAAJ&hl=en" target="_blank">
+    				<i class="fa-solid fa-graduation-cap" style="font-size:22px;"></i>
+  				</a>
+
+  			<!-- ResearchGate -->
+  				<a href="https://www.researchgate.net/profile/Vikas-Kumar-165?ev=hdr_xprf" target="_blank">
+    				<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" alt="ResearchGate" width="22" 	style="margin-top:2px;">
+  				</a>
+
+			</div>
+
+			
+			
+
+
+
+  		</div>
+
+
+	</div>
+
+		<div class="footer-container">
+    
+			<footer>
+  <p>&copy; 2025 Vikas Kumar. All rights reserved.</p>
+</footer>
+  
+		</div>
+
+</body>
+
+</html>
