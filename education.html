@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" >
+  <title>Vikas Kumar | Portfolio</title>
+  <style>
+    
+
+
+	body {margin:0; padding:0; line-height:1.6; background:#f4f4f4; color:#333; font-family: Arial, sans-serif; justify-content: center;
+  align-items: center;}
+
+       .container{
+  		max-width: 900px;
+  		margin: 8px auto ;          /* center content */
+  		background-color: #ffffff; /* white or off-white */
+  		padding: 20px 40px;
+  		border-radius: 10px;
+  		box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+ 		min-height: calc(75vh - 30px);    /* 100% viewport height minus 20px top & 20px bottom */
+  		box-sizing: border-box;
+ 		display: in-flex;
+  		flex-direction: column;  
+		color: #333;          
+	       }
+
+      .container a{color: #333;}
+
+    
+
+ 	header{
+    		
+    		color: #333;            /* Change text color to black for contrast */
+    		padding: 1rem;
+    		text-align: justify;    
+	      }
+
+
+
+
+
+	header h1 {margin:0; font-size:2rem; font-family: Segoe Script, sans-serif;justify-content: left;color: #24375A;}
+
+
+       .nav-container{
+    		max-width: 900px;  /* Same as sections */
+    		margin: 10px auto;    /* Center it */
+		}
+
+
+	nav {
+		
+   	 	background-color: #24375A;
+    		border-radius: 5px 5px 5px 5px;
+    		padding: 10px 20px;
+    		display: flex;          /* Normal flex */
+    		justify-content: left; /* Center the links inside */
+    		gap: 25px;
+    		font-family: Arial, sans-serif;
+    		color: #F9F5EC;
+	    }
+
+	 nav a {color:#F9F5EC; margin:0 20px; text-decoration:none; font-weight:bold;font-family: Arial, sans-serif;}
+
+	 nav a:hover {   color: #D3D3D3; }
+
+ 		nav a.active {
+  		color: #D3D3D3;       /* gold text */
+  		border-bottom: 2px solid  #D3D3D3; /* underline highlight */
+		}
+
+
+	.profile-img-container {
+  		max-width: 800px;
+  		margin: 20px auto auto 15px; /* Space below nav, centered horizontally */
+  		display: flex;
+  		align-items: flex-start;
+		}
+
+	/* Profile photo style */
+	.profile-img-container img {
+ 		 width: 250px;
+ 		 height: 250px;
+ 		 border-radius: 50%;
+ 		 object-fit: cover;
+ 		 display: block;
+		}
+
+
+
+
+	.profile-row {
+  		display: flex;
+  		gap: 30px;                /* Space between photo and bio */
+  		align-items: flex-start;  /* Align top edges */
+  		max-width: 900px;
+ 	 	margin: 2px auto 0 auto; /* Same centering as nav bar */
+		}
+
+
+
+
+	.footer-container {
+   		max-width: 900px;  /* Same as sections */
+    		margin: 0 auto;    /* Center it */
+		}
+
+
+	footer {
+  		background-color: #24375A;
+  		color: #F9F5EC;
+  		text-align: center;
+  		height: 15px;               /* fixed small depth */
+  		line-height: 0px;
+  		font-size: 14px;
+  		border-radius: 5px 5px 5px 5px;
+		padding:15px 15px 20px 15px;
+		margin-top:35px;
+		margin-bottom: 20px;
+		}
+
+
+
+	.contact-box {
+ 	        background-color: #DEDEDE;
+  		color: #24375A;
+		width: 240px;   /* match photo width */
+  		margin: 20px auto auto 15px; /* Space below nav, centered horizontally */
+  		padding: 10px;
+  		border-radius: 5px;
+  		text-align: left;
+  		font-size: 14px;
+		font-family: Arial, sans-serif;
+		}
+
+	.contact-box a { color: #24375A;  }
+	
+
+	.orcid-link {
+  		display: inline-flex;
+  		align-items: center;
+  		font-family: Arial, sans-serif;
+  		font-size: 16px;
+ 	 	text-decoration: none;
+  		color: #A6CE39;
+               }
+
+
+	.orcid-icon {
+  		display: inline-flex;
+  		align-items: center;
+  		justify-content: center;
+  		background-color: #A6CE39;
+  		color: white;
+  		font-size: 15px;
+  		font-weight: bold;
+  		border-radius: 50%;
+  		width: 25px;
+  		height: 25px;
+  		margin-right: 8px;
+		}
+
+	.orcid-text {color: #24375A; font-size:14px;text-decoration:underline;}
+
+	
+
+	section {padding:40px 20px; max-width:900px; margin:auto;}
+
+   	h2 {color:#24375A; border-bottom:2px solid #DEDEDE; font-family: Arial;}
+
+	ul {list-style-type:none; padding:0; text-decoration: none;}
+    
+	ul li {margin-bottom:10px; font-size: 15px; text-decoration:none;}
+
+	li a{text-decoration:none;}
+
+
+
+	/* Publications Section */
+#education {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+#education h2 {
+  color: #24375A;
+  border-bottom: 2px solid #DEDEDE;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#education h3 {
+  color: #24375A;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-left: 4px solid #24375A;
+  padding-left: 10px;
+}
+
+#education ol {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+#education li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+#education a {
+  font-size: 15px;
+  color: #333;
+
+}
+
+#education a:hover {
+  color: #555;
+}
+
+
+.cv-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  
+  padding-bottom: 5px;
+}
+
+.cv-list li .year {
+  color: #24375A;
+  font-weight: bold;
+  min-width: 70px;   /* keeps alignment neat */
+  text-align: right;
+  margin-left: 20px;
+}
+
+   
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+		<header>
+
+ 			<div style="display: in-flex; align-items: center; justify-content: space-between; max-width: 900px; margin: auto;">
+    				
+				<h1>Vikas Kumar</h1>
+    
+  			</div>
+
+  			<div class="nav-container">
+    				
+				<nav>
+      					<a href="index.html">Home</a>
+      					<a href="education.html" class="active">Education</a>
+      					<a href="publications.html">Publications</a>
+          				<a href="awards.html">Awards</a>
+					<a href="teaching.html">Teaching</a>
+      					<a href="activities.html">Activities</a>
+					
+
+    				</nav>
+  			
+			</div>
+		
+		</header>
+
+
+	<div class = "container">
+		
+			<section id="education">
+  				<h2>Education</h2>
+  					<ul >
+    						<li>
+      						<strong>Ph.D.</strong>, <a href="https://ma.iitr.ac.in//" target="_blank">Department of Mathematics,</a> 
+
+						<a href="https://www.iitr.ac.in/" target="_blank">Indian Institute of Technology Roorkee</a> 
+						(2020 – May 2025)<br>
+
+      Thesis title:<em> Design and Cryptanalysis of Noncommutative NTRU-like Post-Quantum Cryptosystems.</em><br>
+    </li>
+    <li>
+      <strong>M.Sc. Mathematics</strong>,<a href="https://www.math.iitb.ac.in//" target="_blank"> Department of Mathematics,</a> <a href="https://www.iitb.ac.in/" target="_blank"> Indian Institute of Technology Bombay </a>(2018 – 2020)<br>
+      GPA: 9.07
+    </li>
+    <li>
+      <strong>B.Sc. (Honors) Mathematics</strong>,<a href="https://sbs.du.ac.in/mathematics/" target="_blank"> Department of Mathematics</a>, <a href="https://sbs.du.ac.in/" target="_blank"> Shaheed Bhagat Singh College,</a> <a href="https://www.du.ac.in/" target="_blank"> University of Delhi</a> (2015 – 2018) GPA: 9.203<br>
+      
+    </li>
+    <li>
+      <strong>Intermediate</strong>, <a href="https://www.sacredheartchandausi.org/" target="_blank">Sacred Heart Convent School, Chandausi </a>(2015)<br>
+      Percentage: 94.2%
+    </li>
+    <li>
+      <strong>High School</strong>, <a href="https://www.sacredheartchandausi.org/" target="_blank">Sacred Heart Convent School, Chandausi</a> (2013)<br>
+      Percentage: 92.5%
+    </li>
+  </ul>
+</section>
+		
+
+  		
+	</div>
+
+		<div class="footer-container">
+    
+<footer>
+  <p>&copy; 2025 Vikas Kumar. All rights reserved.</p>
+</footer>
+  
+		</div>
+
+</body>
+
+</html>

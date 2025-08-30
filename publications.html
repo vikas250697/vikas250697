@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" >
+  <title>Vikas Kumar | Portfolio</title>
+  <style>
+    
+
+
+	body {margin:0; padding:0; line-height:1.6; background:#f4f4f4; color:#333; font-family: Arial, sans-serif; justify-content: center;
+  align-items: center;}
+
+       .container{
+  		max-width: 900px;
+  		margin: 8px auto ;          /* center content */
+  		background-color: #ffffff; /* white or off-white */
+  		padding: 20px 40px;
+  		border-radius: 10px;
+  		box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+ 		min-height: calc(75vh - 30px);    /* 100% viewport height minus 20px top & 20px bottom */
+  		box-sizing: border-box;
+ 		display: in-flex;
+  		flex-direction: column;            
+	       }
+
+
+
+    
+
+ 	header{
+    		
+    		color: #333;            /* Change text color to black for contrast */
+    		padding: 1rem;
+    		text-align: justify;    
+	      }
+
+
+
+
+
+	header h1 {margin:0; font-size:2rem; font-family: Segoe Script, sans-serif;justify-content: left;color: #24375A;}
+
+
+       .nav-container{
+    		max-width: 900px;  /* Same as sections */
+    		margin: 10px auto;    /* Center it */
+		}
+
+
+	nav {
+		
+   	 	background-color: #24375A;
+    		border-radius: 5px 5px 5px 5px;
+    		padding: 10px 20px;
+    		display: flex;          /* Normal flex */
+    		justify-content: left; /* Center the links inside */
+    		gap: 25px;
+    		font-family: Arial, sans-serif;
+    		color: #F9F5EC;
+	    }
+
+	 nav a {color:#F9F5EC; margin:0 20px; text-decoration:none; font-weight:bold;font-family: Arial, sans-serif;}
+
+	 nav a:hover {   color: #D3D3D3; }
+	 nav a.active {
+  		color: #D3D3D3;       /* gold text */
+  		border-bottom: 2px solid  #D3D3D3; /* underline highlight */
+		}
+
+
+	.profile-img-container {
+  		max-width: 800px;
+  		margin: 20px auto auto 15px; /* Space below nav, centered horizontally */
+  		display: flex;
+  		align-items: flex-start;
+		}
+
+	/* Profile photo style */
+	.profile-img-container img {
+ 		 width: 250px;
+ 		 height: 250px;
+ 		 border-radius: 50%;
+ 		 object-fit: cover;
+ 		 display: block;
+		}
+
+
+
+
+	.profile-row {
+  		display: flex;
+  		gap: 30px;                /* Space between photo and bio */
+  		align-items: flex-start;  /* Align top edges */
+  		max-width: 900px;
+ 	 	margin: 2px auto 0 auto; /* Same centering as nav bar */
+		}
+
+
+
+
+	.footer-container {
+   		max-width: 900px;  /* Same as sections */
+    		margin: 0 auto;    /* Center it */
+		}
+
+
+	footer {
+  		background-color: #24375A;
+  		color: #F9F5EC;
+  		text-align: center;
+  		height: 15px;               /* fixed small depth */
+  		line-height: 0px;
+  		font-size: 14px;
+  		border-radius: 5px 5px 5px 5px;
+		padding:15px 15px 20px 15px;
+		margin-top:35px;
+		margin-bottom: 20px;
+		}
+
+
+
+	.contact-box {
+ 	        background-color: #DEDEDE;
+  		color: #24375A;
+		width: 240px;   /* match photo width */
+  		margin: 20px auto auto 15px; /* Space below nav, centered horizontally */
+  		padding: 10px;
+  		border-radius: 5px;
+  		text-align: left;
+  		font-size: 14px;
+		font-family: Arial, sans-serif;
+		}
+
+	.contact-box a { color: #24375A;  }
+	
+
+	.orcid-link {
+  		display: inline-flex;
+  		align-items: center;
+  		font-family: Arial, sans-serif;
+  		font-size: 16px;
+ 	 	text-decoration: none;
+  		color: #A6CE39;
+               }
+
+
+	.orcid-icon {
+  		display: inline-flex;
+  		align-items: center;
+  		justify-content: center;
+  		background-color: #A6CE39;
+  		color: white;
+  		font-size: 15px;
+  		font-weight: bold;
+  		border-radius: 50%;
+  		width: 25px;
+  		height: 25px;
+  		margin-right: 8px;
+		}
+
+	.orcid-text {color: #24375A; font-size:14px;text-decoration:underline;}
+
+	
+
+	section {padding:40px 20px; max-width:900px; margin:auto;}
+
+   	h2 {color:#24375A; border-bottom:2px solid #DEDEDE; font-family: Arial;}
+
+	ul {list-style-type:none; padding:0;}
+    
+	ul li {margin-bottom:10px;}
+
+
+
+	/* Publications Section */
+#publications {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+#publications h2 {
+  color: #24375A;
+  border-bottom: 2px solid #DEDEDE;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#publications h3 {
+  color:#24375A;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-left: 4px solid #24375A;
+  padding-left: 10px;
+}
+
+#publications ol {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+#publications li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+#publications a {
+  font-size: 14px;
+  color: #24375A;
+  text-decoration: underline;
+}
+
+#publications a:hover {
+  color: #555;
+}
+
+
+
+   
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+		<header>
+
+ 			<div style="display: in-flex; align-items: center; justify-content: space-between; max-width: 900px; margin: auto;">
+    				
+				<h1>Vikas Kumar</h1>
+    
+  			</div>
+
+  			<div class="nav-container">
+    				
+				<nav>
+      					<a href="index.html">Home</a>
+      					<a href="education.html">Education</a>
+      					<a href="publications.html"class = "active">Publications</a>
+          				<a href="awards.html">Awards</a>
+					<a href="teaching.html">Teaching</a>
+      					<a href="activities.html">Activities</a>
+					
+
+    				</nav>
+
+    				</nav>
+  			
+			</div>
+		
+		</header>
+
+
+	<div class = "container">
+		
+
+	<section id="publications">
+
+  		<h2>Publications</h2>
+
+  			<h3>Journal Publications</h3>
+  				<ol>
+
+					<li>
+    						<strong>V. Kumar</strong>, A. Raya, A. K. Gangopadhyay, and S. Gangopadhyay.  
+    						<em>“Cryptanalysis of Group Ring NTRU: The Case of the Dihedral Group”</em>.  
+   						Security and Privacy, 8.2 (2025).  
+    						<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/spy2.70020" target="_blank">Link</a>
+  					</li>
+
+    					<li>
+      						<strong>V. Kumar</strong>, R. Das, and A. K. Gangopadhyay.  
+      						“<em>GR-NTRU: Dihedral group over ring of Eisenstein integers</em>”.  
+      						Journal of Information Security and Applications, 83 (2024), p. 103795.  
+      						<a href="https://doi.org/10.1016/j.jisa.2024.103795" target="_blank">DOI</a>
+    					</li>
+  
+
+  					<li>
+    						<strong>V. Kumar</strong>, B. Mandal, and A. K. Gangopadhyay.  
+    						<em>“On the Gowers U2 and U3 norms of Boolean functions and their restriction to hyperplanes”</em>.  
+    						Discrete Applied Mathematics, 341 (2023), pp. 4–8.  
+    						<a href="https://doi.org/10.1016/j.dam.2023.07.024" target="_blank">DOI</a>
+  					</li>
+  					<li>
+    						A. K. Gangopadhyay,<strong> V. Kumar</strong>, P. Stănică, and S. Gangopadhyay.  
+    						<em>“Stability of the Walsh–Hadamard spectrum of cryptographic Boolean functions with biased inputs”</em>.  
+    						Journal of Applied Mathematics and Computing, 69 (2023), pp. 3337–3357.  
+    						<a href="https://doi.org/10.1007/s12190-023-01887-3" target="_blank">DOI</a>
+  					</li>
+				</ol>
+
+			<h3>Conference Publications</h3>
+				
+				<ol>
+  					<li>
+    						A. Raya,<strong> V. Kumar</strong>, A. K. Gangopadhyay, and S. Gangopadhyay.  
+    						<em>“Giant Does NOT Mean Strong: Cryptanalysis of BQTRU”</em>.  
+    						Post-Quantum Cryptography, Springer, 2025, pp. 312–348.  
+    						<a href="https://doi.org/10.1007/978-3-031-86599-2_11" target="_blank">DOI</a>
+  					</li>
+  					<li>
+    						<strong>V. Kumar</strong>, A. Raya, A. K. Gangopadhyay, S. Gangopadhyay, and M. T. Hussain.  
+    						<em>“An Efficient Noncommutative NTRU from Semidirect Product”</em>.  
+    						Progress in Cryptology – INDOCRYPT 2024, Springer, 2025, pp. 3–27.  
+    						<a href="https://doi.org/10.1007/978-3-031-80308-6_1" target="_blank">DOI</a>
+  					</li>
+  					<li>
+    						<strong>V. Kumar</strong>, A. Raya, A. K. Gangopadhyay, and S. Gangopadhyay.  
+    						<em>“Dimension Reduction Attack on Noncommutative Group Ring NTRU Over the Dihedral Group”</em>.  
+    						1st International Conference On Cryptography And Information Security (VCRIS), 2024, pp. 1–6.  
+    						<a href="https://doi.org/10.1109/VCRIS63677.2024.10813443" target="_blank">DOI</a>
+  					</li>
+  					<li>
+    						A. Raya, <strong>V. Kumar</strong>, and S. Gangopadhyay.  
+    						<em>“DiTRU: A Resurrection of NTRU over Dihedral Group”</em>.  
+    						Progress in Cryptology - AFRICACRYPT 2024, Springer, 2024, pp. 349–375.  
+    						<a href="https://doi.org/10.1007/978-3-031-64381-1_16" target="_blank">DOI</a>
+  					</li>
+  					<li>
+    						A. Raya,<strong> V. Kumar</strong>, S. Gangopadhyay, and A. K. Gangopadhyay.  
+    						<em>“Results on the Key Space of Group-Ring NTRU: The Case of the Dihedral Group”</em>.  
+    						Security, Privacy, and Applied Cryptography Engineering, Springer, 2024, pp. 1–19.  
+    						<a href="https://doi.org/10.1007/978-3-031-51583-5_1" target="_blank">DOI</a>
+  					</li>
+  					<li>
+    						<strong>V. Kumar</strong>, B. Mandal, A. K. Gangopadhyay, and S. Gangopadhyay.  
+    						<em>“Computational Results on Gowers U2 and U3 Norms of Known S-Boxes”</em>.  
+    						Codes, Cryptology and Information Security, Springer, 2023, pp. 150–157.  
+    						<a href="https://doi.org/10.1007/978-3-031-33017-9_10" target="_blank">DOI</a>
+  					</li>
+
+				</ol>
+
+			<h3>Under Communication</h3>
+				
+				<ol>
+  					<li>
+    						A. Raya,<strong> V. Kumar</strong>, S. Gangopadhyay, and A. K. Gangopadhyay.  
+    						<em>“Efficient Noncommutative KEMs from Twisted Dihedral Group Ring”</em>.  
+    						Cryptology ePrint Archive, Paper 2025/795.  
+    						<a href="https://eprint.iacr.org/2025/795" target="_blank">Link</a>
+  					</li>
+				</ol>
+
+	</section>
+
+ 	<a href="Vikas_bibtex.bib" download="Vikas_bibtex.bib">BibTeX</a>
+
+ 		
+	</div>
+
+		<div class="footer-container">
+    
+			<footer>
+  <p>&copy; 2025 Vikas Kumar. All rights reserved.</p>
+</footer>
+  
+	</div>
+
+</body>
+
+</html>
