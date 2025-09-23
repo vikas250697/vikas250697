@@ -1,9 +1,15 @@
-@misc{KEMs,
-      author = {Ali Raya and Vikas Kumar and Sugata Gangopadhyay and Aditi Kar Gangopadhyay},
-      title = {Efficient Noncommutative {KEMs} from Twisted Dihedral Group Ring},
-      howpublished = {Cryptology {ePrint} Archive, Paper 2025/795},
-      year = {2025},
-      url = {https://eprint.iacr.org/2025/795}
+@article{RAYA2025111704,
+title = {Efficient key encapsulation mechanisms from noncommutative NTRU},
+journal = {Computer Networks},
+volume = {272},
+pages = {111704},
+year = {2025},
+issn = {1389-1286},
+doi = {https://doi.org/10.1016/j.comnet.2025.111704},
+url = {https://www.sciencedirect.com/science/article/pii/S138912862500670X},
+author = {Ali Raya and Vikas Kumar and Sugata Gangopadhyay and Aditi {Kar Gangopadhyay}},
+keywords = {NTRU, Twisted group rings, Noncommutative, Dihedral group},
+abstract = {Key Encapsulation Mechanisms (KEMs) are cryptographic set of algorithms used to establish a shared secret between two parties over an insecure channel. In the context of post-quantum cryptography, KEMs are typically constructed from hard mathematical problems believed to resist quantum attacks. Among these, lattice-based schemes–particularly those based on the NTRU problem–have been widely studied due to their efficiency and strong security foundations. Traditional NTRU constructions operate over commutative polynomial rings, offering a good balance between speed and compactness. However, recent efforts have proposed noncommutative variants of NTRU to enhance resistance against algebraic attacks. While these variants improve security properties, they generally fall short in terms of performance when compared to the original NTRU. This work introduces the first noncommutative NTRU construction that matches the performance of classical NTRU over the ring of integers. In addition, we propose a second design based on the ring of Eisenstein integers, further enhancing computational efficiency. We provide full KEM implementations of both constructions and benchmark them against existing commutative and noncommutative NTRU-based schemes. Our results demonstrate that the twisted dihedral group ring-based construction achieves encapsulation and decapsulation speeds on par with NTRU-HPS, while improving key generation speed by a factor of 2.5. The Eisenstein integer-based scheme shows an improvement of 1.6× in key generation and 1.3× in encapsulation and decapsulation. These findings confirm that noncommutative algebra can be leveraged effectively to achieve competitive performance in practical post-quantum KEM designs.}
 }
 
 @article{kumar2023latticeattackgroupring,
